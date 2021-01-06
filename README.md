@@ -2,7 +2,7 @@
 It's an API where you can request users. This was created especially for use in my projects, but you also can use it.
 
 ## How to use?
-First, you need to do a git clone, so create a folder in you computer and do: <br>
+First, you need to do a git clone, so create a folder in your computer and do: <br>
 `git clone https://github.com/CauaS1/users-api.git`, after this, you need to install all the dependences from package.json, so just do `yarn` or `npm install`
 <br> <br>
 To run it is very simple, do `npm run dev` or `yarn run dev`
@@ -33,7 +33,7 @@ Returns all users, the result will be like this: <br>
 ```
 
 ### `GET` `http://localhost:5500/user/:id`
-Returns just an user with the id selected, for example: `http://localhost:5500/user/5` <br>
+Returns just a user with the id selected, for example: `http://localhost:5500/user/5` <br>
 ```
 {
   "user": {
