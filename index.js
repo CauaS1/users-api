@@ -21,7 +21,6 @@ const Data = [
       hour: 5,
       likes: 280
     },
-    liked: false
   },
   {
     id: 2,
@@ -37,7 +36,6 @@ const Data = [
       hour: 18,
       likes: 518
     },
-    liked: false
   },
   {
     id: 3,
@@ -53,7 +51,6 @@ const Data = [
       hour: 5,
       likes: 650
     },
-    liked: false
   },
   {
     id: 4,
@@ -69,7 +66,6 @@ const Data = [
       hour: 2,
       likes: 150
     },
-    liked: false
   },
   {
     id: 5,
@@ -85,7 +81,6 @@ const Data = [
       hour: 11,
       likes: 880
     },
-    liked: false
   }
 ]
 
@@ -96,12 +91,11 @@ app.get("/users", (req, res) => {
 
 app.get("/user/:id", (req, res) => {
   const id = req.params.id;
-
   if (isNaN(id)) {
     res.statusCode = 404;
     res.json({ msg: "Invalid ID!" })
   } else {
-    const user = Data.users.find(user => user.id == id); //Find(), it's gonna find just ONE user with the id
+    const user = Data.find(user => user.id == id); //Find(), it's gonna find just ONE user with the id
 
     if (user != undefined) {
       res.json({ user });
@@ -114,7 +108,7 @@ app.get("/user/:id", (req, res) => {
 app.get("/users/gender/:gender", (req, res) => {
   const gender = req.params.gender;
   if (gender == "male" || gender == "female") {
-    const user = Data.users.filter(user => user.gender == gender); //Filter(), it's gonna find ALL the users with the gender selected
+    const user = Data.filter(user => user.gender == gender); //Filter(), it's gonna find ALL the users with the gender selected
     res.json({ user });
   } else {
     res.sendStatus(404);
