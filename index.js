@@ -21,6 +21,11 @@ const Data = [
       hour: 5,
       likes: 280
     },
+    profission: 'Photographer',
+    connection: {
+      followers: 3892,
+      following: 985
+    }
   },
   {
     id: 2,
@@ -36,12 +41,18 @@ const Data = [
       hour: 18,
       likes: 518
     },
+    profission: 'Designer',
+    connection: {
+      followers: 1892,
+      following: 8892
+    }
+
   },
   {
     id: 3,
-    name: "Alexis",
+    name: "Alex",
     photo: "https://images.unsplash.com/photo-1581382575275-97901c2635b7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    about: "Love to take photos",
+    about: "Love to take some trips around the World",
     gender: "male",
     post: {
       image: "https://images.unsplash.com/photo-1609518726036-d683cc25eef4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=410&q=80",
@@ -51,6 +62,11 @@ const Data = [
       hour: 5,
       likes: 650
     },
+    profission: 'Traveler',
+    connection: {
+      followers: 8551,
+      following: 1581
+    } 
   },
   {
     id: 4,
@@ -66,6 +82,11 @@ const Data = [
       hour: 2,
       likes: 150
     },
+    profission: 'Game Developer',
+    connection: {
+      followers: 12874,
+      following: 989
+    } 
   },
   {
     id: 5,
@@ -81,6 +102,11 @@ const Data = [
       hour: 11,
       likes: 880
     },
+    profission: 'Waiter',
+    connection: {
+      followers: 5637,
+      following: 1253
+    }
   }
 ]
 
